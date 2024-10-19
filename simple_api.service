@@ -1,0 +1,10 @@
+[Unit]
+Description=Simple API Service
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/simple_api
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
